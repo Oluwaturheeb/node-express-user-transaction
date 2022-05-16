@@ -12,3 +12,5 @@ app.use(express.urlencoded({ extended: false }));
 // register our api route
 app.use('/api', apiRouter);
 app.listen(process.env.PORT || 3000);
+
+export default app;

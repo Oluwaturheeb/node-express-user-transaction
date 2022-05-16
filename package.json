@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js -i app.test.js",
+    "test": "jest"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -13,11 +14,13 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "jest": "^28.1.0",
     "jsonwebtoken": "^8.5.1",
     "knex": "^2.0.0",
     "morgan": "~1.9.1",
-    "mysql": "^2.18.1",
-    "uuidv7": "^0.3.4"
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3"
   }
 }
